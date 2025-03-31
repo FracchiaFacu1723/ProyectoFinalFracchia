@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "Buenos Aires",
+        "economico": 1000,
+        "medio": 1500,
+        "lujoso": 2500
+    },
+    {
+        "nombre": "Mendoza",
+        "economico": 1200,
+        "medio": 1800,
+        "lujoso": 3000
+    },
+    {
+        "nombre": "Córdoba",
+        "economico": 900,
+        "medio": 1400,
+        "lujoso": 2200
+    }
+]

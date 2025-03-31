@@ -95,3 +95,8 @@ function mostrarResultado(destino, dias, personas, costoTotal) {
         <p>Costo total para ${personas} personas durante ${dias} días: <strong>$${costoTotal}</strong></p>
     `;
 }
+fetch("http://localhost:3000/destinos")
+  .then(response => response.json())
+  .then(destinos => console.log(destinos))
+  .catch(error => console.error("Error al cargar destinos:", error));
+  
