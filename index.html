@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Presupuesto de Vacaciones</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Simulador de Presupuesto de Vacaciones</h1>
+    </header>
+
+    <main>
+        <p>
+            Este simulador te permite calcular un presupuesto aproximado para tus vacaciones. 
+            Ingresa el destino, la cantidad de días, el número de personas y tu estilo de gasto, 
+            y obtendrás un desglose de costos estimado.
+        </p>
+
+        <form id="formulario">
+            <label for="destino">Destino:</label>
+            <select id="destino" required>
+                <option value="">Selecciona un destino</option>
+            </select>
+            
+            <label for="dias">Cantidad de días:</label>
+            <input type="number" id="dias" required>
+            
+            <label for="personas">Número de personas:</label>
+            <input type="number" id="personas" required>
+            
+            <label for="tipoGasto">Estilo de gasto:</label>
+            <select id="tipoGasto" required>
+                <option value="Económico">Económico</option>
+                <option value="Medio">Medio</option>
+                <option value="Lujoso">Lujoso</option>
+            </select>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="resultado"></div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
